@@ -1,6 +1,10 @@
-public class Mage extends Player{
+package players;
 
-//    the mage creates instances of IDefend and ISpell type in order to invoke defends/spells on an enemy
+import players.Player;
+
+public class Mage extends Player {
+
+//    the mage creates instances of players.IDefend and players.ISpell type in order to invoke defends/spells on an enemy
 
     private IDefend defend;
     private ISpell castSpell;
@@ -19,6 +23,6 @@ public class Mage extends Player{
         this.defend = defend;
     }
 
-    public void
+
 
 }

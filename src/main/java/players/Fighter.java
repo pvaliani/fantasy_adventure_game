@@ -1,6 +1,11 @@
+package players;
+
+import enemies.Enemy;
+import players.Player;
+
 public abstract class Fighter extends Player {
 
-//    we don't implement IWeapon  - we create a type of IWeapon called selected Weapon
+//    we don't implement players.IWeapon  - we create a type of players.IWeapon called selected Weapon
     private IWeapon selectedWeapon;
 
     public Fighter(String name, int healthPoints, IWeapon selectedWeapon){

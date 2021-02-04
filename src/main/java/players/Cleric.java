@@ -1,3 +1,7 @@
+package players;
+
+import players.Player;
+
 public class Cleric extends Player {
 
     private IHeal selectedAlchemy;

@@ -1,4 +1,6 @@
+package healings;
 
+import players.Player;
 
 public class Herb implements IHeal {
 

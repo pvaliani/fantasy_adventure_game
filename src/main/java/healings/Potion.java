@@ -1,3 +1,7 @@
+package healings;
+
+import players.Player;
+
 public class Potion implements IHeal {
 
     private int healingValue;
