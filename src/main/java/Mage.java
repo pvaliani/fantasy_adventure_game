@@ -7,7 +7,18 @@ public class Mage extends Player{
 
     public Mage(String name, int healthPoints, IDefend defend, ISpell castSpell){
         super(name, healthPoints);
-
+        this.castSpell = castSpell;
+        this.defend = defend;
     }
+
+    public void getcastSpell(){
+        this.castSpell = castSpell;
+    }
+
+    public void getDefend(){
+        this.defend = defend;
+    }
+
+    public void
 
 }
