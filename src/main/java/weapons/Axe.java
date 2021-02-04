@@ -1,4 +1,11 @@
 package weapons;
 
-public class Axe {
+import enemies.Enemy;
+import players.IWeapon;
+
+public class Axe implements IWeapon {
+
+    public void attack(Enemy enemy){
+
+    }
 }

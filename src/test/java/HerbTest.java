@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import players.Knight;
 import players.Player;
+import weapons.Sword;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,11 +11,13 @@ public class HerbTest {
 
     Herb herb;
     Knight player_1;
+    Sword battleSword;
 
     @Before
     public void before() {
         herb = new Herb();
-        player_1 = new Knight("Sir Mixalot", 100, SelectedWeapon);
+        battleSword = new Sword();
+        player_1 = new Knight("Sir Mixalot", 100, battleSword, 100);
     }
 
 
