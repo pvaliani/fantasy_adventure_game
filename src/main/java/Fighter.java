@@ -1,6 +1,7 @@
-public abstract class Fighter implements IWeapon {
+public abstract class Fighter extends Player implements IWeapon {
 
-    public Fighter(){
+    public Fighter(String selectedPlayer, String name, int healthPoints){
+        super(selectedPlayer, name, healthPoints);
 
 
     }
@@ -10,6 +11,7 @@ public abstract class Fighter implements IWeapon {
     }
 
     public void attack(){
+
 
     }
 

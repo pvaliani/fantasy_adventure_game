@@ -1,3 +1,3 @@
 public interface IWeapon {
-    void attack();
+    public void attack();
 }
