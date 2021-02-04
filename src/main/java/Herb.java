@@ -11,7 +11,7 @@ public class Herb implements IHeal {
 //    set the healing points for the player by the pre-defined healing value of a herb i.e 10
 
     public void healPlayer(Player player){
-        player.setHealthPoints(this.healingValue);
+        player.getHealed(this.healingValue);
     }
 
 }
