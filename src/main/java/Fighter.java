@@ -1,19 +1,33 @@
-public abstract class Fighter extends Player implements IWeapon {
+public abstract class Fighter extends Player {
 
-    public Fighter(String selectedPlayer, String name, int healthPoints){
-        super(selectedPlayer, name, healthPoints);
+//    we don't implement IWeapon  - we create a type of IWeapon called selected Weapon
+    private IWeapon selectedWeapon;
 
+    public Fighter(String name, int healthPoints, IWeapon selectedWeapon){
+        super(name, healthPoints);
+        this.selectedWeapon =  selectedWeapon;
 
     }
 
-    public void selectFighter(){
+//    getters and setters for selectedWeapon
 
+    public IWeapon getSelectedWeapon() {
+        return selectedWeapon;
+    }
+
+    public void setSelectedWeapon(IWeapon selectedWeapon) {
+        this.selectedWeapon = selectedWeapon;
     }
 
     public void attack(){
 
-
     }
+
+    public void swapWeapon(IWeapon selectedWeapon){
+        setSelectedWeapon(selectedWeapon);
+    }
+
+
 
 
 }
