@@ -19,9 +19,11 @@ public abstract class Fighter extends Player {
         this.selectedWeapon = selectedWeapon;
     }
 
-    public void attack(){
+    public void attack(Enemy enemy){
 
     }
+
+//    swap weapon invokes the setter for selected weapon and takes in the new weapon to do a swap
 
     public void swapWeapon(IWeapon selectedWeapon){
         setSelectedWeapon(selectedWeapon);
