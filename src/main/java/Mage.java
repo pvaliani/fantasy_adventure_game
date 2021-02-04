@@ -1,10 +1,13 @@
-public class Mage extends Player implements IDefend, ISpell {
+public class Mage extends Player{
 
+//    the mage creates instances of IDefend and ISpell type in order to invoke defends/spells on an enemy
 
-    public Mage(String selectedPlayer, String name, int healthPoints){
-        super(selectedPlayer, name, healthPoints);
+    private IDefend defend;
+    private ISpell castSpell;
+
+    public Mage(String name, int healthPoints, IDefend defend, ISpell castSpell){
+        super(name, healthPoints);
 
     }
-
 
 }
