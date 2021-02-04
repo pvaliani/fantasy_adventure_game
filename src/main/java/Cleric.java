@@ -1,6 +1,8 @@
 public class Cleric extends Player {
 
-    public Cleric(String name, int healthPoints, Heal selectedAlchemy){
+    private IHeal selectedAlchemy;
+
+    public Cleric(String name, int healthPoints, IHeal selectedAlchemy){
         super(name, healthPoints);
         this.selectedAlchemy = selectedAlchemy;
 
