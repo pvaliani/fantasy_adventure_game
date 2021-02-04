@@ -17,7 +17,7 @@ public class HerbTest {
     public void before() {
         herb = new Herb();
         battleSword = new Sword();
-        player_1 = new Knight("Sir Mixalot", 100, Sword, 100);
+        player_1 = new Knight("Sir Mixalot", 100, battleSword, 100);
     }
 
 

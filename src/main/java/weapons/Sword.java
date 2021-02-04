@@ -1,4 +1,4 @@
 package weapons;
 
-public class Sword {
+public class Sword implements IWeapon {
 }
